@@ -1,0 +1,163 @@
+/* Styles go here */
+
+h1{
+    text-align: center;
+				font-family: Segoe UI, Helvetica, Ubuntu, sans-serif;
+				color: white;
+                
+
+}
+
+h2{
+    text-align: center;
+    color: white;
+ 
+}
+#container{
+    cursor: pointer;
+    position:fixed;
+    z-index: -1;
+    }
+    #scoreBoard{
+      font-size: 260%;
+      font-family: fantasy;
+
+    }
+#restart {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    border-radius: 50%;
+    color: white;
+    background-color:red;
+    border: none;
+    font-weight: 700;
+    font-size: 1.2em;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: none;
+    cursor: pointer;
+    margin-left: 850px;
+  }
+  #title{
+font-family:cursive;
+font-size: 500%;
+text-shadow:7px 2px blue;
+
+  }
+  #videoBG{
+     position:fixed;
+    z-index: -1; 
+    width:100%;     
+    height: auto;
+  }
+  #win{
+    font-family: cursive;
+    text-shadow:4px 2px  chartreuse;
+
+  }
+  #play {
+    width: 7%;
+    height: 11%;
+    position: absolute;
+    border-radius: 50%;
+    color: white;
+    background-color:red;
+    border: none;
+    font-weight: 700;
+    font-size: 1.2em;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    cursor: pointer;
+    margin-left: 46%;
+    flex-basis: auto ;
+
+  }
+  body{
+    /* background-image: url("red.png") ;
+    background-repeat: no-repeat;
+    background-size: 100%; */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+  }
+  /* @media screen and (max-width:800px) {
+    #restart, #title, #container,#play {
+      width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+    /* }} */ 
+   
+    @media (min-aspect-ratio: 16/9) {
+      #videoBG,#container {
+          width:100%;
+          height:auto;
+      }
+  }
+
+
+
+  /* new button added for level */
+  /* body {
+    background: #3b0044;
+    color: #6098FF;
+    font-family: sans-serif;
+    font-size: 16px;
+  } */
+  .wrapper {
+    margin: 140px auto;
+    text-align: center;
+    width: 100%;
+    position: relative;
+   
+  }
+  .button {
+    padding: 15px 100px;
+    margin: 10px 4px;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-weight: 30%;
+    font-size: 150%;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .button {
+    border: 1px solid transparent;
+    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+  }
+  .button::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: -1;
+    width: 0%;
+    height: 1px;
+    background: #003177;
+    box-shadow: inset 0px 0px 0px #b6cdef;
+    display: block;
+    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+  }
+  .button:hover::before {
+    width: 100%;
+  }
+  .button::after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: -1;
+    width: 0%;
+    height: 1px;
+    background: #a9c1e8;
+    -webkit-transition: all 0.4s cubic-bezier(.7, .25, 0, 1);
+    transition: all 0.4s cubic-bezier(.7, .25, 0, 1)
+  }
+  .button:hover::after {
+    width: 100%;
+  }
+  .button:hover {
+    border-left: 1px solid #b6cdef;
+    border-right: 1px solid #6098FF;}

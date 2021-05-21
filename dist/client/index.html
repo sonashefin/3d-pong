@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <video id="videoBG" autoplay muted loop>
+    <source src="video1.mp4" type="video/mp4">
+  </video>
+  <h1 id='title'>3D PONG</h1>
+  <h2 id="scoreBoard"></h2>
+  <h1 id="win"></h1>
+  
+  <button id="play">PLAY GAME</button>
+  
+ 
+  <div class="wrapper" id="level">
+    <a href="#" class="button" id="level1">easy</a>
+    <a href="#" class="button" id="level2">medium</a>
+    <a href="#" class="button"  id="level3">hard</a>
+
+    
+  </div>
+    
+
+  <button id="restart">RESTART</button>
+  <div id="container"></div>
+  <script type="module" src="manager.js"></script>
+</body>
+
+</html>
